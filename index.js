@@ -14,7 +14,10 @@ function clearDisplay() {
 function calculate() {
   try {
     display.value = eval(
-      display.value.replace(/\^/g, "**").replace(/%/g, "/100"),
+      display.value
+        .replace(/\^/g, "**")
+        .replace(/%/g, "/100")
+        .replace(/x/g, "*"),
     );
   } catch (error) {
     display.value = "Error";
