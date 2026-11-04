@@ -13,7 +13,7 @@ function clearDisplay() {
 }
 function calculate() {
   try {
-    display.value = eval(display.value);
+    display.value = eval(display.value.replace(/\^/g, "**"));
   } catch (error) {
     display.value = "Error";
   }
