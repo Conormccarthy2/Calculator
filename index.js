@@ -1,5 +1,6 @@
 const display = document.getElementById("display");
 let output = false;
+let ANS = 0;
 function appendToDisplay(input) {
   if (output === true) {
     display.value = "";
@@ -23,4 +24,7 @@ function calculate() {
     display.value = "Error";
   }
   output = true;
+  if (display.value !== "Error") {
+    ANS = display.value;
+  }
 }

@@ -49,6 +49,9 @@ button:hover {
 button:active {
   background-color: #777;
 }
+.ans-btn {
+  font-size: 2.5rem;
+}
 .operator-btn {
   background-color: #ff9d1a;
 }
@@ -67,10 +70,6 @@ button:active {
 }
 .operator-btneq:active {
   background-color: #8dfcb0;
-}
-.zero-btn {
-  grid-column: span 2;
-  width: 220px;
 }
 .filler {
   background-color: transparent;
