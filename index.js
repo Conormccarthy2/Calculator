@@ -13,7 +13,9 @@ function clearDisplay() {
 }
 function calculate() {
   try {
-    display.value = eval(display.value.replace(/\^/g, "**"));
+    display.value = eval(
+      display.value.replace(/\^/g, "**").replace(/%/g, "/100"),
+    );
   } catch (error) {
     display.value = "Error";
   }
