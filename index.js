@@ -1,7 +1,10 @@
 const display = document.getElementById("display");
+const ansvalue = document.getElementById("ansvalue");
 let output = false;
 let ANS = 0;
+
 function appendToDisplay(input) {
+  ansvalue.textContent = ANS;
   if (output === true) {
     display.value = "";
     output = false;
@@ -11,8 +14,10 @@ function appendToDisplay(input) {
 function clearDisplay() {
   display.value = "";
   output = false;
+  ansvalue.textContent = "0";
 }
 function calculate() {
+  ansvalue.textContent = display.value;
   try {
     display.value = eval(
       display.value

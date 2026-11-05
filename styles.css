@@ -24,6 +24,13 @@ body {
   color: #aaa;
   font-size: 2rem;
 }
+#current-ans-sum {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  font-size: 1.5rem;
+  color: #aaa;
+}
 
 #backspace:hover {
   background: transparent;
