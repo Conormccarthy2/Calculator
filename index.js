@@ -40,3 +40,26 @@ function backspace() {
 
   output = false;
 }
+document.addEventListener("keydown", (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+
+  const key = event.key;
+
+  if (/^[0-9]$/.test(key) || ["+", "-", "/", ".", "^", "%"].includes(key)) {
+    appendToDisplay(key);
+  } else if (key === "*" || key.toLowerCase() === "x") {
+    appendToDisplay("x");
+  } else if (key === "Enter" || key === "=") {
+    calculate();
+  } else if (key === "Backspace") {
+    backspace();
+  } else if (key.toLocaleLowerCase() === "c") {
+    clearDisplay();
+  } else if (key.toLowerCase() === "a") {
+    appendToDisplay("ANS");
+  } else {
+    return;
+  }
+
+  event.preventDefault();
+});
