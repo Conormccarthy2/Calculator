@@ -20,7 +20,10 @@
             "darwin"
           ]
         }
-      ]
+      ],
+      "packagerConfig": {
+        "icon": "./assets/icon.icns"
+      }
     }
   },
   "devDependencies": {
