@@ -4,9 +4,11 @@ A simple desktop calculator for macOS, built with HTML, CSS, JavaScript, and Ele
 
 ## Features
 
-- Basic arithmetic: addition, subtraction, multiplication, and division
+- Basic arithmetic: addition, subtraction, multiplication, division, percentages, indicies
 - Clear button to reset the display
 - New input starts a fresh calculation after a result
+- Backspace button
+- Keyboard support
 
 ## Run locally
 
@@ -16,18 +18,15 @@ bash
 npm install
 npm start
 
-
 ## Build the Mac app
 
 bash
 npm run package
 
-
 The `Calculator.app` bundle will be in the `out` folder. To create a ZIP containing the app, run:
 
 bash
 npm run make
-
 
 ## Project files
 
