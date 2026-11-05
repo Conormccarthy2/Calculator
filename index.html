@@ -9,6 +9,14 @@
   <body>
     <div id="calculator">
       <input id="display" readonly />
+      <button
+        id="backspace"
+        type="button"
+        onclick="backspace()"
+        aria-label="Delete last entry"
+      >
+        ⌫
+      </button>
       <div id="keys">
         <button onclick="clearDisplay()">C</button>
         <button onclick="appendToDisplay('%')">%</button>

@@ -11,6 +11,23 @@ body {
   border-radius: 15px;
   max-width: 500px;
   overflow: hidden;
+  position: relative;
+}
+#backspace {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  width: 48px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  color: #aaa;
+  font-size: 2rem;
+}
+
+#backspace:hover {
+  background: transparent;
+  color: white;
 }
 #display {
   display: block;

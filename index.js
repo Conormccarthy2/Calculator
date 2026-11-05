@@ -28,3 +28,15 @@ function calculate() {
     ANS = display.value;
   }
 }
+function backspace() {
+  if (display.value === "Error") {
+    clearDisplay();
+    return;
+  }
+
+  display.value = display.value.endsWith("ANS")
+    ? display.value.slice(0, -3)
+    : display.value.slice(0, -1);
+
+  output = false;
+}
